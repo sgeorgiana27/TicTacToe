@@ -1,0 +1,35 @@
+﻿<Window x:Class="TicTacToe.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:TicTacToe"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="500" Width="515">
+    <Window.Resources>
+        <Style TargetType="Button">
+            <Setter Property="FontFamily" Value="Arial" />
+            <Setter Property="FontSize" Value="20" />
+            <Setter Property="FontWeight" Value="Bold" />
+        </Style>
+    </Window.Resources>
+    <Grid Height="500">
+        <TextBlock FontSize="20" x:Name="WhichPlayer" TextAlignment="Center" Margin="146,12,116,412"/>
+        <Label Content="Player 1: " FontSize="20" Margin="0,0,376,395"/>
+        <TextBlock FontSize="20" x:Name="Player1Score" Margin="84,5,10,375" Text="0"/>
+        <Label Content="Player 2: " FontSize="20" Margin="384,0,10,380"/>
+        <TextBlock FontSize="20" x:Name="Player2Score" Margin="466,5,0,432" Text="0"/>
+        <Button x:Name="button1" Margin="80,60,310,314" Click="button_Click" Width="110" Height="110" />
+        <Button x:Name="button2" Margin="196,60,194,314" Click="button_Click" Width="110" Height="110" />
+        <Button x:Name="button3" Margin="311,60,79,314" Click="button_Click" Width="110" Height="110" />
+        <Button x:Name="button7" Margin="80,291,310,83" Click="button_Click" Width="110" Height="110"/>
+        <Button x:Name="button6" Margin="311,175,79,199" Click="button_Click" Width="110" Height="110"/>
+        <Button x:Name="button5" Margin="196,176,194,198" Click="button_Click" Width="110" Height="110"/>
+        <Button x:Name="button4" Margin="80,176,310,198" Click="button_Click" Width="110" Height="110"/>
+        <Button x:Name="button8" Margin="196,291,194,83" Click="button_Click" Width="110" Height="110" />
+        <Button x:Name="button9" Margin="311,291,79,83" Click="button_Click" Width="110" Height="110"/>
+        <Button x:Name="restart" Content="Restart"  Margin="180,428,180,10" Click="restart_Click"/>
+        
+
+    </Grid>
+</Window>
